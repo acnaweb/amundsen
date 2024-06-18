@@ -2,12 +2,6 @@
 
 Amundsen Data Catalog
 
-
-### Pre req
-
-* Python >= 3.8.x
-* elasticsearch 7.x
-
 ### Run
 
 #### Environment 
@@ -21,18 +15,15 @@ ELASTICHSEARCH_PORT=9200
 GOOGLE_APPLICATION_CREDENTIALS=./credentials/service_account.json
 ```
 
-#### Docker run
-
-```sh
-docker compose  -f server/docker-compose-amundsen.yaml up
-```
-
 #### Elastic Search
 
 (Method 1) Add /etc/sysctl.conf
 
 > vm.max_map_count=262144
 
+```sh
+sysctl -p
+```
 
 (Method 2) Ephemeral
 
