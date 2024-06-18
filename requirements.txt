@@ -1,5 +1,0 @@
-# sqlalchemy~=2.0
-
-elasticsearch>=7
-pyhocon~=0.3
-amundsen-databuilder~=7.4

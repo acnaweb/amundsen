@@ -15,7 +15,7 @@ Amundsen Data Catalog
 ```sh
 NEO4J_ENDPOINT=bolt://localhost:7687
 CREDENTIALS_NEO4J_USER=neo4j
-CREDENTIALS_NEO4J_PASSWORD=mypassword
+CREDENTIALS_NEO4J_PASSWORD=test
 ELASTICHSEARCH_HOST=localhost
 ELASTICHSEARCH_PORT=9200
 GOOGLE_APPLICATION_CREDENTIALS=./credentials/service_account.json
@@ -42,7 +42,7 @@ sysctl -w vm.max_map_count=262144
 ### Web UI
 
 * [Amundsen Web](http://localhost:5000/)
-* [Neo4J](http://localhost:7474/) user: neo4j pwd: mypassword
+* [Neo4J](http://localhost:7474/) user: neo4j pwd: test
 * [Elastic Search](http://localhost:9200/)
 
 ### API
@@ -53,7 +53,7 @@ curl -v http://localhost:5002/healthcheck
 
 > Neo4j Bolt
 > - bolt://localhost:7687/ 
-> - user: neo4j pwd: mypassword
+> - user: neo4j pwd: test
 
 ### Architecture
 
@@ -61,6 +61,7 @@ curl -v http://localhost:5002/healthcheck
 
 ## References
 
+- https://www.amundsen.io/amundsen/installation/
 - https://medium.com/talabat-tech/a-step-by-step-guide-deploying-amundsen-on-google-cloud-platform-ee4ef20d81f5
 - https://gobblin.apache.org/docs/
 - https://www.amundsen.io/amundsen/databuilder/
